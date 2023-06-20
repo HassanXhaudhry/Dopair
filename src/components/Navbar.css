@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat:wght@100;200&family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+:root {
+	--mainColor: #000000;
+	--mainColorLight: #000000;
+	--secondaryColor: rgb(155, 101, 31);
+	--textColor: #eee;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: transparent;
+	color: var(--textColor);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	position: relative;
+}
+ nav a::after{
+	content: " ";
+	position: absolute;
+	background-color: var(--secondaryColor);
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -8px;
+ }
+nav a:hover {
+
+	font-weight: bold;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+	margin-right: 10px;
+}
+nav .dropdown .sub-menu li{
+	list-style: none;
+}
+nav .dropdown{
+	display: inline-block;
+  position: relative;
+
+}
+nav .dropdown-btn{
+	border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+nav .sub-menu{
+	display: none;
+  position: absolute;
+  overflow: auto;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  background-color:#fff;
+  border-radius:5px;
+  text-align: center;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .sub-menu {
+	display: block;
+  }
+  .sub-menu a {
+	display: block;
+	color: #000000;
+	padding-right: 10px;
+	text-decoration: none;
+	padding:10px 20px;
+	text-align: center;
+  }
+  .sub-menu a:hover {
+	color: #0a0a23;
+	background-color: #ddd;
+	border-radius:5px;
+  }
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.modal-background{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(189, 189, 189, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 0;
+}
+
+.vertical-line{
+	border-left: 5px dotted rgb(155, 101, 31);
+	height: 425px;
+	position: fixed;
+	left: 50%;
+	margin-left: -3px;
+	top: 45px;
+}
+
+  .signup-div{
+	background-color: rgb(26, 35, 32);
+	position: fixed;
+    width: 25%;
+	height: 60%;
+	display: flex;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+    top: 10%;
+    right: 0%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+  }
+.login-div{
+	background-color: rgb(26, 35, 32);
+	position: fixed;
+    width: 25%;
+	height: 60%;
+	display: flex;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+    top: 10%;
+    left: 27.5%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+.form__field{ 
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    width:250px;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+  }
+ .form__field:focus{ 
+    border:none;	
+    outline:none;
+    border-bottom:1px solid rgb(155, 101, 31);	
+   }
+ 
+
+@media only screen and (max-width: 550px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        text-align: center;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: rgb(26, 35, 32);
+		transition: 1s;
+        text-align: center;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		
+		top: 2rem;
+		right: 2rem;
+        padding-left: 40px;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+	.form__field{
+		width:80px;
+    padding:5px 0 3px 0;
+    font-size:8px;
+	}
+	.btn-sub{
+		padding:5px 10px;
+		margin-top:20px;
+		margin-bottom: 10px;
+		width: 60px;
+		height: 25px;
+		font-size: 12px;
+	   }
+	   .login-div{
+		width: 20%;
+		height: 30%;
+	   }
+	   .signup-div{
+		width: 20%;
+		height: 30%;
+	   }
+}

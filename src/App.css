@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+    font-size: 62.5%;
+  }
+
+  @media(max-width:998px){
+    html{
+      font-size: 65%;
+    }
+  }
+  @media(max-width:786px){
+    html{
+      font-size: 55%;
+    }
+  }

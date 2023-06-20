@@ -1,0 +1,33 @@
+.about-main-div{
+    text-align: center;
+    margin-top: 100px;
+    width: 700px;
+    height: 750px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.about-inner-div{
+    width: 525px;
+    height: 250px;
+    background-color: rgb(155, 101, 31);
+    --transition-duration: 700ms;
+    transition: all .6s ease;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.about-text{
+    position: relative;
+    color: white;
+    vertical-align: baseline;
+    letter-spacing: 0.05em;
+    --transition-duration: 700ms;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: all .6s ease;
+}

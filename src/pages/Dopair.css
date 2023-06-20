@@ -1,0 +1,161 @@
+.imgone{
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    margin-bottom: 500px;
+}
+
+.imgtext{
+    position: relative;
+    padding-top: 60px;
+   text-align: center; 
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    color: rgb(155, 101, 31);
+    transition: all .6s ease;
+}
+.imgtext:hover{
+    transform: scale(1.02);
+}
+h6{
+
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 25px;
+    color: white;
+}
+h6:hover{
+    color: rgb(155, 101, 31);
+    font-weight: bold;
+}
+
+
+.faicons{
+    width: 50%;
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+};
+.twoimages{
+    position: absolute;
+}
+.imgbox1{
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    background-color:rgb(70, 69, 69);
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    float: left;
+    top:0;
+    margin-top: 548px;
+    margin-left: 120px;
+}
+.imgbox2{
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    background-color:rgb(70, 69, 69);
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    float: right;
+    top: 0;
+    margin-top: 548px;
+    margin-left: 640px;
+}
+
+.forthimg{
+    position: absolute;
+}
+.forthtext{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    height: 180px;
+    width: 250px;
+    background-color:rgb(70, 69, 69);
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    float: left;
+    top:0;
+    margin-top: 1050px;
+    margin-left: 130px;
+}
+.forthtext2{
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    height: 180px;
+    width: 290px;
+    background-color:rgb(70, 69, 69);
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    float: left;
+    top:0;
+    margin-top: 1330px;
+    margin-left: 130px;
+    transition: all .6s ease;
+}
+.buttonn{
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    background-color:rgb(171, 121, 46);
+    color: rgb(255, 255, 255);
+    float: left;
+    top:0;
+    margin-top: 1420px;
+    margin-left: 470px;
+    cursor: pointer;
+    border: none;
+}
+.buttonn:hover{
+    opacity: 0.7;
+}
+
+
+
+.join-team{
+    position:relative;
+    color: rgb(155, 101, 31);
+    text-align: center;
+}
+
+.join-team .form__field{ 
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+    width:250px;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+  }
+  .join-team .form__field:focus{ 
+    border:none;	
+    outline:none;
+    border-bottom:1px solid rgb(155, 101, 31);	
+   }
+   .btn-sub{
+    color:#fff;
+	background-color:rgb(155, 101, 31);
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+    margin-bottom: 20px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+   }
+   .btn-sub:hover{
+    background-color: rgb(165, 131, 85);
+   }

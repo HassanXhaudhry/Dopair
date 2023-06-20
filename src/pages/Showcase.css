@@ -1,0 +1,50 @@
+.showcase{
+    padding-top: 100px ;
+    margin-left: 30%;
+}
+
+
+.menu{
+   display: flex;
+   width: 525px;
+   height: 275px;
+   overflow: hidden;
+   margin-bottom: 20px;
+   color: white;
+   transition: all .6s ease;
+   box-shadow: gray 0 7px 20px 0;
+}
+.menu:hover{
+    transform: scale(1.02);
+}
+.cart-content{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+.cart-content h3{
+    margin-top: 2px;
+}
+.cart-content h4{
+    margin-bottom: 5px;
+}
+.cart-content .btn-cart{
+    padding-bottom: 5px;
+}
+
+.menu .btn-cart{
+    color:#fff;
+	background-color:rgb(155, 101, 31);
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	border-radius:2px;
+	cursor:pointer;
+    float: right;
+	position:absolute;
+   }
+   .menu .btn-cart:hover{
+    background-color: rgb(165, 131, 85);
+   }
